@@ -1,0 +1,140 @@
+* {
+    background-color: #FFEDBB;
+    color: #EC9192;
+}
+
+
+html {
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: -20px;
+} 
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+/* denna gör basen till min navbar, ändra storlek och färg sen */
+nav ul li a {
+    text-decoration: none;
+    color: #EC9192;
+    font-size: 20px;
+}
+
+/* här kan jag ändra färgen på min navbar när jag hovrar */
+
+nav ul li a:hover {
+    color:#4C9F70;
+}
+
+h1.logo {
+    font-family: 'Caveat', cursive;
+    text-align: center;
+    font-size: 48px;
+}
+
+.logo {
+    width: 207px;
+    margin: 30px 0;
+    margin-top: 41px;
+    cursor: pointer;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+.column {
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+} 
+
+.about-section {
+    padding: 50px;
+    text-align: center;
+    color: white;
+    border: 3px dashed #4C9F70;
+}
+
+.image {
+    box-shadow: 0 4px 8px 0;
+    margin: 8px;
+}
+
+img {
+    height: auto;
+    width: 100%;
+    flex-direction: column;
+}
+
+img:hover {
+    box-shadow: 12px;
+}
+
+
+.container  {
+    padding: 0 16px;
+}
+
+.container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.title {
+    color:#EC9192;
+}
+
+.button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color:#4C9F70;
+    background-color: #EC9192;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+.button:hover {
+    background-color: #f3a6a8;
+}
+
+@media screen and (max-width:600px) {
+
+    h1.logo {
+        font-family: 'Caveat', cursive;
+        text-align: center;
+        font-size: 38px;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .column {
+        width: 100%;
+        display: block;
+    }
+}

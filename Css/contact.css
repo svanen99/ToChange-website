@@ -1,0 +1,204 @@
+* {
+    background-color: #FFEDBB;
+    color: #EC9192;
+    box-sizing: border-box;
+}
+
+
+html {
+    height: 100vh;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: -20px;
+} 
+
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+/* denna gör basen till min navbar, ändra storlek och färg sen */
+nav ul li a {
+    text-decoration: none;
+    color: #EC9192;
+    font-size: 20px;
+}
+
+/* här kan jag ändra färgen på min navbar när jag hovrar */
+
+nav ul li a:hover {
+    color:#4C9F70;
+}
+
+.logo {
+    width: 207px;
+    margin: 30px 0;
+    margin-top: 41px;
+    cursor: pointer;
+}
+
+.title {
+    text-align: center;
+    margin: 10px;
+    border: 3px dashed #4C9F70;
+}
+
+
+footer {
+
+    padding: 24px;
+    text-align: left;
+}
+
+/* .h1 {
+    margin: 0;
+    background-color: #EC9192;
+}
+
+.h1::before {
+    content:'\00C6';
+}
+
+.hero-image img {
+    height: auto;
+    width: 100%;
+} */
+
+.form-controls {
+    flex-grow: 1;
+    padding: 24px;
+}
+
+.field,
+textarea {
+    margin: 16px 0px;
+}
+
+button {
+    background-color: #EC9192;
+    border-color: #EC9192;
+    border-radius: 5px;
+    padding: 12px 16px;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center; 
+
+}
+
+textarea {
+    background-color:#F8F4E3;
+    height: 50px;
+    width: 100%;
+}
+
+.required::after {
+    color: #EB6534;
+    content: "*";
+}
+
+::-webkit-input-placeholder {
+    color:#4C9F70;
+}
+
+.first-name {
+    padding: 8px;
+    border-radius: 5px;
+}
+
+label + input {
+    display: block;
+}
+
+input[type=text] {
+    padding: 8px;
+    border-color: #fff;
+}
+
+.field {
+    padding: 8px;
+}
+
+.filed {
+    padding: 8px;
+}
+
+label + input [type=text] {
+    display: block;
+}
+
+input[type=checkbox]:checked {
+    accent-color: green;
+}
+
+input [type=checkbox] {
+    visibility: hidden;
+}
+
+input[type=checkbox]::before {
+    background-color: #fff;
+    border: 1px solid black;
+    border-radius: 5px;
+    content: '';
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+
+}
+input[type=checkbox]:checked::before {
+    content:"\2665";
+    padding: 2px;
+}
+
+h1.logo {
+    font-family: 'Caveat', cursive;
+    text-align: center;
+    font-size: 48px;
+}
+
+@media screen and (max-width:600px) {
+
+    h1.logo {
+        font-family: 'Caveat', cursive;
+        text-align: center;
+        font-size: 38px;
+    }
+
+    h2 {
+        margin: top 0;
+        font-size: 0.9rem;
+        color:#EC9192;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 0.9rem;
+    }
+
+ 
+    .navbar {
+        flex-direction: column;
+    }
+
+ 
+
+}
+
+
