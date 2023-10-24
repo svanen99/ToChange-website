@@ -2,11 +2,8 @@
     background-color: #FFEDBB;
     color: #EC9192;
 }
-
-
 html {
-    height: 100vh;
-    box-sizing: border-box;
+    min-height: 100vh;
 }
 
 body {
@@ -22,6 +19,7 @@ body {
     align-items: center;
     margin-top: -20px;
 } 
+
 nav {
     flex: 1;
     text-align: right;
@@ -33,17 +31,18 @@ nav ul li {
     margin-right: 30px;
 }
 
-/* denna gör basen till min navbar, ändra storlek och färg sen */
 nav ul li a {
     text-decoration: none;
     color: #EC9192;
     font-size: 20px;
 }
 
-/* här kan jag ändra färgen på min navbar när jag hovrar */
-
 nav ul li a:hover {
     color:#4C9F70;
+}
+
+.active {
+    color: #4C9F70;
 }
 
 h1.logo {
@@ -69,7 +68,8 @@ h1.logo {
 } 
 
 .about-section {
-    padding: 50px;
+    padding: 1px;
+    margin-top: 10px;
     text-align: center;
     color: white;
     border: 3px dashed #4C9F70;
@@ -121,6 +121,11 @@ img:hover {
     background-color: #f3a6a8;
 }
 
+footer {
+    padding: 24px;
+    text-align: left;
+}
+
 @media screen and (max-width:600px) {
 
     h1.logo {
@@ -131,6 +136,10 @@ img:hover {
 
     .navbar {
         flex-direction: column;
+    }
+
+    .active {
+        color: #4C9F70;
     }
 
     .column {

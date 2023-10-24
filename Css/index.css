@@ -1,5 +1,4 @@
- *{
-    background-color: #FFEDBB;
+ *{  
     color: #EC9192;
 }
 
@@ -34,16 +33,18 @@ nav ul li {
     margin-right: 30px;
 }
 
-/* denna gör basen till min navbar, ändra storlek och färg sen */
 nav ul li a {
     text-decoration: none;
     color: #EC9192;
     font-size: 20px;
 }
 
-/* här kan jag ändra färgen på min navbar när jag hovrar */
 
 nav ul li a:hover {
+    color: #4C9F70;
+}
+
+.active {
     color: #4C9F70;
 }
 
@@ -71,9 +72,9 @@ h2 {
     font-size: 1rem;
     color:#EC9192;
     text-align: center;
+    border: 3px dashed #4C9F70;
+    padding: 20px;
 }
-
-/* section */
 
 section {
     align-items: center;
@@ -83,8 +84,7 @@ section {
     display:flex;
     flex-wrap: wrap;
     margin: 25px 25px 25px 25px;
-    text-align: center;
-    border: 3px dashed #4C9F70;
+    text-align: center; 
 }
 
 .main {
@@ -98,17 +98,6 @@ article {
     font-size: 1rem;
     flex-basis: 40%;
 }
-
-.copy {
-    text-align: center;
-    text-decoration: none;
-}
-
-.end-note {
-    text-align: center;
-}
-
-/* footer */
 footer {
     background:  #FFEDBB;
     width: 100%;
@@ -125,10 +114,12 @@ footer {
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    background-color: #fbf0d3;
+    border: 3px dashed #EC9192;
 }
 
 .footer-content a {
-    background-color:#FFEDBB;
+    background-color:#fbf0d3;
     color: #EC9192;
     cursor: pointer;
     font-size: 20px;
@@ -140,38 +131,24 @@ footer {
     line-height: 28px;
     max-width: 500px;
     margin: 10px auto;
-}
-
-.footer-end p {
-    font-size: 15px;
-}
-
-.footer-end span {
-    opacity: .7;
-    text-transform: uppercase;
-}
-
-
-.footer-bottom {
     text-align: center;
 }
 
+.footer-end p {
+    font-size: 16px;
+    margin: 1px;
+    padding-bottom: 20px;
+    width: 100%;
+    text-align: left;
+    padding-left: 25px;
 
-
-.footer-content a {
-    text-decoration: none;
-    cursor: pointer;
-    color:#438D9B;
-    font-size: 20px;
 }
-
-
 .socials {
     list-style: none;
     justify-content: center;
     align-items:center;
     display: flex;
-    margin: 1rem 0 2rem 0;    
+    margin: 1rem 40px 2rem 0;    
 }
 
 .socials li {
@@ -179,7 +156,7 @@ footer {
 }
 
 .socials li a {
-    background-color: #FFEDBB;
+    background-color: #fbf0d3;
 }
 .socials a path {
     transition: color .4s ease;
@@ -189,8 +166,6 @@ footer {
 .socials a:hover path {
     color: green;
 }
-
-
 
 @media screen and (max-width:600px) {
     .header {
@@ -221,11 +196,20 @@ footer {
         right: -40px;
         z-index: 2;
         margin: 60px;
+        cursor: pointer;
     }
 
      ul .menulist {
         padding-top: 24px;
    }
+
+    nav ul li a:hover {
+        color: #4C9F70;
+}
+
+    .active {
+        color: #4C9F70;
+}
    
     .h4 .first.article { 
         font-size: 0.5rem;
@@ -239,12 +223,7 @@ footer {
         margin: 13px;
         padding: 10px;    
     }
-
-    .footer-end {
-        margin-top: 197px;
-        background-color: transparent;
-    }
-
+    
     .footer-content {
         position: absolute;
         left: 0;
@@ -253,24 +232,35 @@ footer {
         width: 100vw;
         padding-top: 20px;
         color: #4C9F70;
+        border: 3px dashed #4C9F70;
     }
 
     .footer-content a {
-       
+    
         color: #4C9F70;
         height: 25px;
         width: 120px;
         cursor: pointer;
-
     }
-    /* ändra nedan sen */
+
+    .footer-end {
+        margin: 30px 0 0px 0px;
+        padding: 4px 61px;
+        color: #4C9F70;
+        text-align: left;
+    }
+    .footer-end p {
+        margin-top: 207px;
+    }
+
     .end-note {
         max-width: 500px;
         margin: 10px auto;
         line-height: 28px;
         font-size: 13px;
-    }
+        background-color: #fbf0d3;
 
+    }
     .socials {
         display: flex;
         align-items: center;
@@ -281,6 +271,7 @@ footer {
 
     .socials li {
         margin: 0 10px;
+        background-color: #fbf0d3;
     }
 
     .socials a path {
@@ -291,14 +282,7 @@ footer {
 
     .socials a:hover path {
         color: #4C9F70;
-    }
-
-
-    .a {
-      
+        background-color: #fbf0d3;
     }
 
 }
-
-
-

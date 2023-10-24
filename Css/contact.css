@@ -6,7 +6,7 @@
 
 
 html {
-    height: 100vh;
+    min-height: 100vh;
 }
 
 body {
@@ -35,17 +35,18 @@ nav ul li {
     margin-right: 30px;
 }
 
-/* denna gör basen till min navbar, ändra storlek och färg sen */
 nav ul li a {
     text-decoration: none;
     color: #EC9192;
     font-size: 20px;
 }
 
-/* här kan jag ändra färgen på min navbar när jag hovrar */
-
 nav ul li a:hover {
     color:#4C9F70;
+}
+
+.active {
+    color: #4C9F70;
 }
 
 .logo {
@@ -67,20 +68,6 @@ footer {
     padding: 24px;
     text-align: left;
 }
-
-/* .h1 {
-    margin: 0;
-    background-color: #EC9192;
-}
-
-.h1::before {
-    content:'\00C6';
-}
-
-.hero-image img {
-    height: auto;
-    width: 100%;
-} */
 
 .form-controls {
     flex-grow: 1;
@@ -186,6 +173,10 @@ h1.logo {
         font-size: 0.9rem;
         color:#EC9192;
         text-align: center;
+    }
+
+    .active {
+        color: #4C9F70;
     }
 
     h3 {
