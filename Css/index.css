@@ -89,7 +89,7 @@ section {
 
 .main {
     display: grid;
-    grid-template-areas: "head head head" , "side content content" , "foot foot foot"; 
+    grid-template-areas: "head head head" ,"side content content" , "foot foot foot"; 
 }
 
 article {
